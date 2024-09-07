@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колесо фортуны</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="wheel" width="500" height="500"></canvas>
+        <div class="buttons">
+            <button id="shuffle">Перемешать</button>
+            <button id="spin">Крутить</button>
+        </div>
+        <div class="time-container">
+            <button id="decrease-time">-</button>
+            <div id="time-box">Время: 3 сек</div>
+            <button id="increase-time">+</button>
+        </div>
+        <div id="history-container">
+            <h2>(мы не успели зделать историю и корректное время крутки, поэтому оно может дольше или быстрее крутится, соряяяян:<  Идея: Fixed , разработчик: stakpoint , made for: nemixxx :)</h2>
+            <ul id="history-list">
+                <!-- Здесь будет добавляться история -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Начинаем элементы сверху */
+    min-height: 100vh; /* Высота страницы - весь экран */
+    font-family: Arial, sans-serif;
+    color: white;
+    flex-direction: column;
+    overflow-y: auto; /* Вертикальная прокрутка */
+    padding: 20px; /* Немного отступов для удобства */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Теперь выравниваем элементы сверху */
+    width: 100%;
+    max-width: 800px; /* Ограничим максимальную ширину контейнера для центровки */
+    margin: 0 auto; /* Центровка по горизонтали */
+    padding-top: 100px; /* Отодвигаем контейнер от верха страницы */
+}
+
+canvas {
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #666;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#time-box {
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#history-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#history-container h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    color: white;
+    margin-top: 20px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+}
+
+#history-list li {
+    margin-top: 10px;
+}
